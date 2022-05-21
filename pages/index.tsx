@@ -5,7 +5,9 @@ import type {
 } from "next";
 import Head from "next/head";
 import Image from "next/image";
+import Link from "next/link";
 import { getProducts } from "../logics/services/product";
+import { product } from "../logics/types";
 import styles from "../styles/Home.module.css";
 
 const Home: NextPage = ({
@@ -18,7 +20,14 @@ const Home: NextPage = ({
         <meta name="description" content="Beheading products list" />
       </Head>
       <main>
-        {products.length}
+        {products.map((item: product, index: number) => (
+          <p key={index}>
+            {" "}
+            <Link href={`/${item.id}`}>
+              <a>{item.title}</a>
+            </Link>
+          </p>
+        ))}
       </main>
     </div>
   );
