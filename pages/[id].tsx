@@ -43,6 +43,7 @@ const ProductDetail: NextPage = ({
             <div className="text-lg mb-8 ">
               <del className="text-slate-500">${product.price * 2}</del>
               <span className="font-semibold text-pink-500">
+                {" "}
                 ${product.price}
               </span>
             </div>
