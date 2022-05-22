@@ -33,7 +33,7 @@ const ProductDetail: NextPage = ({
           </div>
           <div className="p-8">
             <div className="md:flex">
-              <h1 className="block mt-1 flex-auto text-3xl text-black">
+              <h1 className="block mt-1 flex-auto text-2xl text-black">
                 {product.title}
               </h1>
               <div className="my-2 md:mt-4">
@@ -43,7 +43,6 @@ const ProductDetail: NextPage = ({
             <div className="text-lg mb-8 ">
               <del className="text-slate-500">${product.price * 2}</del>
               <span className="font-semibold text-pink-500">
-                {" "}
                 ${product.price}
               </span>
             </div>
