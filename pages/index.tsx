@@ -13,7 +13,7 @@ const Home: NextPage = ({
   products,
 }: InferGetServerSidePropsType<typeof getServerSideProps>) => {
   return (
-    <div className="px-4">
+    <div className="p-4">
       <Head>
         <title>products list</title>
         <meta name="description" content="Beheading products list" />
@@ -22,7 +22,7 @@ const Home: NextPage = ({
         <div className="grid grid-cols-1 gap-8 mt-8 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
           {products.map((item: product, index: number) => (
             <Link key={index} href={`/${item.id}`} className="f">
-              <a className=" flex border border-slate-100 rounded-md lex flex-col items-center justify-center w-full max-w-lg mx-auto">
+              <a className=" flex border border-slate-100 rounded-md shadow-md lex flex-col items-center justify-center w-full max-w-lg mx-auto">
                 <img
                   className=" rounded-md h-72 w-30 xl:h-80"
                   src={item.image}

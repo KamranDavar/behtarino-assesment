@@ -60,7 +60,7 @@ const ProductDetail: NextPage = ({
                 </button>
               </div>
               <button
-                className="flex-none flex items-center justify-center w-9 h-9 rounded-md text-slate-300 text-2xl"
+                className="self-center w-9 h-9 rounded-md text-slate-300 text-2xl"
                 type="button"
                 aria-label="Like"
               >
