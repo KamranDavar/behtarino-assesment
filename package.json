@@ -10,10 +10,15 @@
   },
   "dependencies": {
     "axios": "^0.27.2",
+    "beauty-stars": "^1.1.0",
     "next": "12.1.6",
     "nprogress": "^0.2.0",
+    "rc-rate": "^2.9.2",
     "react": "18.1.0",
-    "react-dom": "18.1.0"
+    "react-dom": "18.1.0",
+    "react-icons": "^4.3.1",
+    "react-rate-component": "^1.0.2",
+    "react-rater": "^6.0.1"
   },
   "devDependencies": {
     "@types/node": "17.0.35",

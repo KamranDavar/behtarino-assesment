@@ -8,6 +8,11 @@ import Link from "next/link";
 import Image from "next/image";
 import { getSingleProduct } from "../logics/services/product";
 import { product, id } from "../logics/types";
+import { BsShare } from "react-icons/bs";
+import { IoMdCart } from "react-icons/io";
+import Rate from "rc-rate";
+import BeautyStars from "beauty-stars";
+import Rater from "react-rater";
 
 const ProductDetail: NextPage = ({
   product,
@@ -19,7 +24,7 @@ const ProductDetail: NextPage = ({
         <meta name="description" content={product.description} />
       </Head>
 
-      <div className="max-w-md mx-auto bg-white rounded-xl shadow-md overflow-hidden md:max-w-5xl m-6">
+      <div className="max-w-md mx-auto bg-white rounded-xl shadow-md overflow-hidden md:max-w-5xl m-6 lg:mt-48 ">
         <div className="md:flex">
           <div className="md:shrink-0">
             <img
@@ -29,15 +34,21 @@ const ProductDetail: NextPage = ({
             />
           </div>
           <div className="p-8">
-            <a
-              href="#"
-              className="block mt-1 text-lg leading-tight font-medium text-black hover:underline"
-            >
-              {product.title}
-            </a>
+            <div className="md:flex">
+              <h1
+                className="block mt-1 flex-auto text-3xl text-black"
+              >
+                {product.title}
+              </h1>
+              <div className="my-2 md:mt-4">
+
+              <BeautyStars value={3} size={12} activeColor="orange" />
+              </div>
+            </div>
             <div className="text-lg mb-8 ">
               <del className="text-slate-500">${product.price * 2}</del>
-              <span className="font-semibold text-pink-500"> {" "}
+              <span className="font-semibold text-pink-500">
+                {" "}
                 ${product.price}
               </span>
             </div>
@@ -47,29 +58,18 @@ const ProductDetail: NextPage = ({
             <div className="flex space-x-4 mb-6 text-sm font-medium">
               <div className="flex-auto">
                 <button
-                  className="h-10 px-6  rounded-md bg-black text-white text-lg"
+                  className=" px-6 py-4 shadow-xl w-fit font-semibold rounded-md bg-gradient-to-t from-red-500 to-orange-500 text-white text-lg"
                   type="submit"
                 >
-                  Buy now
+                    <IoMdCart className="inline text-xl" /> ADD TO CART
                 </button>
               </div>
               <button
-                className="flex-none flex items-center justify-center w-9 h-9 rounded-md text-slate-300 border border-slate-200"
+                className="flex-none flex items-center justify-center w-9 h-9 rounded-md text-slate-300 text-2xl"
                 type="button"
                 aria-label="Like"
               >
-                <svg
-                  width="20"
-                  height="20"
-                  fill="currentColor"
-                  aria-hidden="true"
-                >
-                  <path
-                    fill-rule="evenodd"
-                    clip-rule="evenodd"
-                    d="M3.172 5.172a4 4 0 015.656 0L10 6.343l1.172-1.171a4 4 0 115.656 5.656L10 17.657l-6.828-6.829a4 4 0 010-5.656z"
-                  />
-                </svg>
+                <BsShare />
               </button>
             </div>
           </div>
