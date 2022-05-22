@@ -20,6 +20,7 @@ const Home: NextPage = ({
         <meta name="description" content="Beheading products list" />
       </Head>
       <main>
+        <h1 className="text-3xl font-bold underline">Hello world!</h1>
         {products.map((item: product, index: number) => (
           <p key={index}>
             {" "}
