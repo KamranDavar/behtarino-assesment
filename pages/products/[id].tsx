@@ -6,8 +6,8 @@ import {
 import Head from "next/head";
 import Link from "next/link";
 import Image from "next/image";
-import { getSingleProduct } from "../logics/services/product";
-import { product, id } from "../logics/types";
+import { getSingleProduct } from "../../logics/services/product";
+import { product, id } from "../../logics/types";
 import { BsShare } from "react-icons/bs";
 import { IoMdCart } from "react-icons/io";
 import BeautyStars from "beauty-stars";
