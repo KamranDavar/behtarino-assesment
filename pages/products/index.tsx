@@ -28,7 +28,7 @@ const Home: NextPage = ({
                   src={item.image}
                   alt="T-Shirt"
                 />
-                <div className="p-2">
+                <div className="p-2 text-center">
                   <h4 className="mt-2 text-lg font-medium text-gray-700 dark:text-gray-200">
                     {item.title}
                   </h4>
