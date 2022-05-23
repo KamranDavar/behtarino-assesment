@@ -10,5 +10,5 @@ npm run dev
 yarn dev
 ```
 
-Open [http://localhost:3000](http://localhost:3008) with your browser to see the result.
+Open [http://localhost:3008](http://localhost:3008) with your browser to see the result.
 Or Click on this [Link](https://behtarino-assesment.vercel.app/)
