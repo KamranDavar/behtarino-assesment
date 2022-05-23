@@ -10,7 +10,6 @@ import { getSingleProduct } from "../../logics/services/product";
 import { product, id } from "../../logics/types";
 import { BsShare } from "react-icons/bs";
 import { IoMdCart } from "react-icons/io";
-import BeautyStars from "beauty-stars";
 import { Rating } from "react-simple-star-rating";
 
 const ProductDetail: NextPage = ({
