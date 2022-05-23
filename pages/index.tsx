@@ -30,7 +30,7 @@ const Home: NextPage = () => {
           </p>
           <p>
             4. Create dynamic route for products which will create urls such as
-            "/products/1" and "/products/2"
+            /products/1 and /products/2
           </p>
           <p>
             5. Get product information with
@@ -43,7 +43,7 @@ const Home: NextPage = () => {
             (id should be replaced by id parameter in the url) server side.
           </p>
           <p>
-            6. Implement components and styles to view product's information
+            6. Implement components and styles to view products information
             fetched in the previous step. Result should look like this design{" "}
             <br></br>
             <a
@@ -52,13 +52,13 @@ const Home: NextPage = () => {
             >
               https://dribbble.com/shots/2404238-Nike-Product-Page
             </a>.
-            <br></br> (If there's something in the design that is not in
-            products' attributes simply remove it) Implementing responsive is a
+            <br></br> (If theres something in the design that is not in
+            products attributes simply remove it) Implementing responsive is a
             bonus.
           </p>
           <p>
-            7. Set page's seo title to product's title and meta description to
-            product's description.
+            7. Set pages seo title to products title and meta description to
+            products description.
           </p>
           <p>8. Send your repository url.</p>
         </div>
